@@ -1,0 +1,8 @@
+version: '2'
+services:
+  noip:
+    container_name: noip
+    restart: always
+    build: ./noip
+    volumes:
+     - ./config:/config
